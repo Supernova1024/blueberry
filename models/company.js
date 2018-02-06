@@ -13,6 +13,7 @@ const companySchema = new Schema({
   contactEmail: { type: String, required: true },
  });
 
-const Company = mongoose.model("Company", bookSchema);
+const Company = mongoose.model("Company", companySchema);
 
 module.exports = Company;
+
