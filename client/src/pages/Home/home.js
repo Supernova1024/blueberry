@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import Button from "../../components/Button";
+import Sidebar from "../../components/Sidebar";
+import Footer from "../../components/Footer";
 
 class Home extends Component {
 
@@ -11,10 +13,7 @@ render() {
       <Container fluid>
         <Row>
           <Col size="md-3">
-          	<Row><p><Link to="/">Home</Link></p></Row>
-          	<Row><p><Link to="#">Companies</Link></p></Row>
-          	<Row><p><Link to="#">Pricing</Link></p></Row>
-          	<Row><p><Link to="#">About</Link></p></Row>
+            <Sidebar />
           </Col>
          <Col size="md-9">
          <h2>Choose an option</h2>
@@ -28,6 +27,10 @@ render() {
          </Button>
          </Col>
         </Row>
+        <Footer
+          topText="Blueberry"
+          bottomText="Copyright 2018"
+        />
        </Container>
     );
 }
