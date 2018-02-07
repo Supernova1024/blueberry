@@ -6,7 +6,9 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-icons-kit": "^1.0.7",
+    "react-radio-buttons": "^1.2.1",
     "react-scripts": "1.1.0",
+    "react-select-us-states": "^0.1.2",
     "react-sidenav": "^2.1.2"
   },
   "scripts": {
