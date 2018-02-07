@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import Home from "./pages/Companies";
+import Companies from "./pages/Companies";
 import Header from "./components/Header";
 
 const App = () =>
