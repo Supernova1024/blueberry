@@ -6,7 +6,7 @@ import { ic_aspect_ratio } from 'react-icons-kit/md/ic_aspect_ratio';
 import { ic_business } from 'react-icons-kit/md/ic_business';
  
 //specify the base color/background of the parent container if needed 
-const MySideNav = () => (
+const Sidebar = () => (
     <div style={{background: '#2c3e50', color: '#FFF', width: 220}}> 
         <SideNav highlightColor='#E91E63' highlightBgColor='#00bcd4' defaultSelected='sales'>       
             <Nav id='home'>
@@ -28,4 +28,4 @@ const MySideNav = () => (
         </SideNav>
     </div>
 )
-export default MySideNav;
+export default Sidebar;
