@@ -26,7 +26,10 @@ componentDidMount(){
 							<h1>Companies</h1>
 							<ul>
 							{this.state.companyList.map(company => (
+								<div>
+							<input type="radio" id={company} />
                   			<li>{company}</li>
+                  			</div>
                   			))}
                   			</ul>
                     		<button>One</button>
