@@ -13,7 +13,7 @@ render() {
       <Container fluid>
         <Row>
           <Col size="md-3">
-            <Sidebar />
+            
           </Col>
          <Col size="md-9">
          <h2>Choose an option</h2>
