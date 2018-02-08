@@ -7,7 +7,7 @@ import { ic_business } from 'react-icons-kit/md/ic_business';
  
 //specify the base color/background of the parent container if needed 
 const Sidebar = () => (
-    <div style={{background: '#2c3e50', color: '#FFF', width: 220, height: 400}}> 
+    <div style={{background: '#2c3e50', color: '#FFF', width: 220, height: 500}}> 
         <SideNav  highlightColor='#E91E63' highlightBgColor='#00bcd4' defaultSelected='sales'>       
             <Nav id='home' className="appNav">
                 <NavIcon><SvgIcon size={20} icon={ic_aspect_ratio}/></NavIcon>    
