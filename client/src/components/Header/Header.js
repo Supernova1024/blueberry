@@ -1,19 +1,21 @@
 import React from "react";
 import "./Header.css";
+import Logo from "./Blueberrylogo.png"
 
 const Header = () => (
   <nav className="navbar navbar-default">
     <div className="container-fluid">
-      <div className="navbar-header">
+      <div className="navbar-header col-md-12">
         <a href="/" className="navbar-brand">
-          Logo
-          <img alt="BlueberryLogo" src="./images/Blueberrylogo.png" />
+          
+          <img id="logo" height="45" alt="BlueberryLogo" src= {Logo} />
+
         </a>
-        <h1 className="navbar-text navbar-right">BlueBerry</h1>
-        <h2 className="navbar-text2 navbar-left">The antioxidant for your Financial Life</h2>
-        <button type="button">
-          <span className="glyphicon glyphicon-cog" />
-        </button>
+        
+        <p className="navbar-text2 navbar-left tag-line" >The antioxidant for your Financial Life</p>
+        
+          <span className="glyphicon glyphicon-cog " id ="gear" />
+        
       </div>
     </div>
   </nav>

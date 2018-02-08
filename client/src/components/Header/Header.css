@@ -1,5 +1,24 @@
 .navbar-default {
-	background-color: rgb(163, 155, 255);
+
+	background-color: #4F86F7;
 	text-align: center;
-  font: 'Lucida Sans';
+	width: 100%;
+	font: 'Lucida Sans';
+
+}
+
+#gear {
+
+float: right;
+margin-top: 15px;
+color: white;
+font-size: 32px;
+}
+
+.tag-line {
+	color: white;
+}
+
+img {
+	margin-top: -10px;
 }
