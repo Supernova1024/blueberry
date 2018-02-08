@@ -4,6 +4,8 @@ import { Col, Row, Container } from "../../components/Grid";
 //import Radio_Button from "../../components/Radio_Button";
 import Jumbotron from "../../components/Jumbotron";
 import Input from "../../components/Input";
+import Button from "../../components/Button";
+import "./AddCompany.css";
 
 class AddCompany extends Component {
 
@@ -21,7 +23,7 @@ state = {
 };
 
 componentDidMount(){
-	this.setState
+	//this.setState
 
 }
 
@@ -36,7 +38,7 @@ componentDidMount(){
 		return (
 
 				<div>
-					<h3> Add New Company </h3>
+					<h3  id="add-company-title" className ="text-center"> New Company Entry </h3>
 					<form class="form">
 						<Input
 							value={this.state.tin}
@@ -92,9 +94,11 @@ componentDidMount(){
        						name="contactEmail"
        						placeholder="Title (required)"
 						/>
-											
+						<div className="text-center">
+							<Button> Submit </Button>
+						</div>   		
 					</form>
-
+				
           		</div>  
                 	
 
