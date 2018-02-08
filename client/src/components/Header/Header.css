@@ -1,7 +1,10 @@
 .navbar-default {
+
 	background-color: #4F86F7;
 	text-align: center;
 	width: 100%;
+	font: 'Lucida Sans';
+
 }
 
 #gear {
