@@ -27,10 +27,7 @@ render() {
          </Button>
          </Col>
         </Row>
-        <Footer
-          topText="Blueberry"
-          bottomText="Copyright 2018"
-        />
+        
        </Container>
     );
 }

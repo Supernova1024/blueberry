@@ -32,10 +32,12 @@ const App = () =>
         <div class="col-md-3">
         </div>
       </div>
-      <Footer className="footer">
-      BlueBerry &copy; 2018
-      </Footer>
+      
     </div>
+    <Footer
+          topText="Blueberry"
+          bottomText="Copyright 2018"
+      />
     </div>
 
   </Router>;
