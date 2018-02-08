@@ -45,6 +45,21 @@ button #gear {
   height: 45px;
 }
 
-,appNav {
-  font-size: 25px;
+.appNav {
+  font-size: 50px;
 }
+
+.myBtn {
+  background-color: green;
+}
+
+.title {
+  text-align: center;
+
+}
+
+h3 {
+  color: white;
+  padding: 10px;
+}
+
