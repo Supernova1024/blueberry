@@ -63,3 +63,6 @@ h3 {
   padding: 10px;
 }
 
+body {
+  min-height: 100%;
+}
