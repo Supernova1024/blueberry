@@ -26,9 +26,24 @@ state = {
 };
 
 componentDidMount(){
-	//this.setState
-
+	this.clearForm();
 }
+
+clearForm = () => {
+	this.setState({
+	Companies: [],
+	tin: "",
+	companyName: "",
+	address: "",
+	city: "",
+	state: "",
+	zip: "",
+	contactName: "",
+	contactPhone: "",
+	contactEmail: ""
+	})
+};
+
 
  handleInputChange = event => {
     const { name, value } = event.target;
@@ -40,10 +55,20 @@ componentDidMount(){
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if (event !== 5) {
+    if (
+    	this.state.tin &&
+    	this.state.companyName &&
+    	this.state.address &&
+    	this.state.city &&
+    	this.state.state &&
+    	this.state.zip &&
+    	this.state.contactName &&
+    	this.state.contactPhone &&
+    	this.state.contactEmail
+        ) {
       API.saveCompany({
-		    tin: this.state.title,
-			companyName: this.state.companyName,
+		    tin: this.state.tin,
+			companyName: this.state.companyName, 
 			address: this.state.address,
 			city: this.state.city,
 			state: this.state.state,
@@ -52,7 +77,7 @@ componentDidMount(){
 			contactPhone: this.state.contactPhone,
 			contactEmail: this.state.contactEmail,
       })
-        .then(res => this.loadBooks())
+        .then(res => this.clearForm())
         .catch(err => console.log(err));
     }
   };
@@ -117,10 +142,15 @@ componentDidMount(){
 							value={this.state.contactEmail}
        						onChange={this.handleInputChange}
        						name="contactEmail"
-       						placeholder="Title (required)"
+       						placeholder="Email (required)"
 						/>
 						<div className="text-center">
-							<Button> Submit </Button>
+							<Button
+							// add disabled here
+							onClick={this.handleFormSubmit}
+							>
+							 Submit 
+							</Button>
 						</div>   		
 					</form>
 				
