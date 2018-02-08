@@ -1,3 +1,2 @@
-export * from "./Input";
-export * from "./TextArea";
+export {default} from "./Input";
 

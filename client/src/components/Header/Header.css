@@ -1,4 +1,21 @@
 .navbar-default {
-	background-color: lightblue;
+	background-color: #4F86F7;
 	text-align: center;
+	width: 100%;
+}
+
+#gear {
+
+float: right;
+margin-top: 15px;
+color: white;
+font-size: 32px;
+}
+
+.tag-line {
+	color: white;
+}
+
+img {
+	margin-top: -10px;
 }

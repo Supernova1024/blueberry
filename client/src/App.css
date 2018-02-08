@@ -26,3 +26,25 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.myNav {
+  font-size: 25px;
+  padding: 15px;
+
+}
+
+button #gear {
+  float: right;
+  background-color: #222;
+}
+
+#main {
+  background-color: #4F86F7;
+}
+ #logo {
+  height: 45px;
+}
+
+,appNav {
+  font-size: 25px;
+}
