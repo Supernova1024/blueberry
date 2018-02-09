@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import Button from "../../components/Button";
 import Sidebar from "../../components/Sidebar";
-import Footer from "../../components/Footer";
 
 class Home extends Component {
 
@@ -16,15 +15,33 @@ render() {
             
           </Col>
          <Col size="md-9">
-         <h2>Choose an option</h2>
-         <Button
-            href="#"
-            type="success"
-            className="input-lg"
-            >
+           <h2>Start Here. Choose Your Data Source</h2>
+           <Button
+              href="#"
+              type="success"
+              className="input-lg"
+              onClick={() => {
+                console.log('clicked on search button');
+
+              }}
+              >
+             
+              Enter My Data
+           </Button>
+
+           <Button
+              href="#"
+              type="success"
+              className="input-lg"
+              onClick={() => {
+                console.log('clicked on search button');
+
+              }}
+              >
+             
+              Use QuickBooks
+           </Button>
            
-            Search
-         </Button>
          </Col>
         </Row>
         

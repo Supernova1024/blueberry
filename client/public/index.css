@@ -4,9 +4,14 @@ body {
   font-family: sans-serif;
   min-height: 100%;
   color:#444  ;
- background: url(calcu.jpg);
+ background: url(taximagenew.jpg);
+ background-color: #edf1f7;
   background-repeat: no-repeat;
-     background-size: 800px 700px;
+  background-attachment: fixed;
+    background-position: center;
+    background-size: 800px 700px; 
+}
+     
 
 }
 

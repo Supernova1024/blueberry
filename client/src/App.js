@@ -44,10 +44,7 @@ const App = () =>
       </div>
       
     </div>
-    <Footer
-          topText="Blueberry"
-          bottomText="Copyright 2018"
-      />
+    <Footer />
     </div>
 
   </Router>;

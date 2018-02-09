@@ -88,6 +88,7 @@ clearForm = () => {
 		return (
 
 				<div>
+					
 					<h3  id="add-company-title" className ="text-center"> New Company Entry </h3>
 					<form class="form">
 						<Input

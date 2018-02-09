@@ -5,6 +5,7 @@ import "./Footer.css";
 var style = {
     backgroundColor: "#312581",
     borderTop: "1px solid #E7E7E7",
+    color: "white",
     textAlign: "center",
     padding: "20px",
     position: "fixed",
@@ -24,9 +25,10 @@ var phantom = {
 function Footer() {
     return (
         <div>
-            <div style={phantom} />
-            <div style={style}>
-                
+            <div style={phantom}>
+                <div style={style}>
+                    Our Company - Help - Privacy 
+                </div>  
             </div>
         </div>
     )
