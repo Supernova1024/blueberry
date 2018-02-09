@@ -1,0 +1,37 @@
+li {
+	color: white;
+	list-style-type:  none;
+	font-size: 20px;
+	margin-right: 10px;
+	height: 35px;
+	
+}
+
+ul {
+	text-decoration: none;
+}
+
+#form-button {
+
+margin: 10px;
+height: 25px;
+padding: 3px;
+
+}
+
+.li-text {
+	display: inline-block;
+	width: 200px;
+	text-overflow: wrap;
+}
+
+#myButtons {
+	display: inline;
+	
+}
+
+
+#myButtons2 {
+	display: inline;
+	float: right;
+}
