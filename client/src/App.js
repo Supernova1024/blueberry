@@ -15,12 +15,12 @@ const App = () =>
     <div>
 
       <Header/>
-       <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3">
+       <div className="container-fluid">
+  <div className="row">
+    <div className="col-md-3">
       <Sidebar/>
       </div>
-          <div class="col-md-6">
+          <div className="col-md-6">
       <Switch>
           <Jumbotron id="main">
         <Route exact path="/" component={Home} />
@@ -30,7 +30,7 @@ const App = () =>
         </Jumbotron>
       </Switch>
       </div>
-        <div class="col-md-3">
+        <div className="col-md-3">
         </div>
       </div>
       

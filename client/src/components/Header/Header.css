@@ -1,9 +1,10 @@
 .navbar-default {
 
-	background-color: #4F86F7;
+	background-color: #a396ff;
 	text-align: center;
 	width: 100%;
-	font: 'Lucida Sans';
+	font-family: 'Halant';
+
 
 }
 
@@ -11,7 +12,7 @@
 
 float: right;
 margin-top: 15px;
-color: white;
+color: #524b7f;
 font-size: 32px;
 }
 
