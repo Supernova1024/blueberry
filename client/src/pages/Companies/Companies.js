@@ -20,7 +20,31 @@ componentDidMount(){
 		return (
 
 			<div>
-				<h3>Companies</h3>
+				<Row>
+					<Col size="md-3">
+					</Col>
+					<Col size="md-6">
+						<div style={{ textAlign: 'center' }}>
+							<h3>Companies</h3>
+						</div>
+					</Col>
+					<Col size="md-3">
+						<Link to="/AddCompany">
+						<button 
+				        	a href="/AddCompany"
+				            type="success"
+				            className="input-lg btn btn-success"
+				            //onClick={() => {
+				             // alert('Get Ready To Add A New Company!');
+				                
+				           // }}
+				         >
+				            Add Company 
+				         </button>
+                          </Link>
+
+				   	</Col>
+		         </Row>
 			<ul>
 				{this.state.companyList.map(company => (
       			<li>{company}</li>
