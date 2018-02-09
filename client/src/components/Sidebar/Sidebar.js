@@ -8,7 +8,7 @@ import { leaf } from 'react-icons-kit/icomoon/leaf';
 
 //specify the base color/background of the parent container if needed 
 const Sidebar = () => (
-    <div style={{background: '#312581', color: '#FFF', width: 240, height: 500}}> 
+    <div style={{background: '#312581', color: '#FFFF', width: 240, height: 1200 }}> 
         <SideNav
             highlightColor='#E91E63'
             highlightBgColor='#00bcd4'
