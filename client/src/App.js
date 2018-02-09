@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Companies from "./pages/Companies";
 import Login from "./pages/Login";
 import AddCompany from "./pages/AddCompany";
-
+import DisplayPdf from "./pages/DisplayPdf";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 
@@ -27,6 +27,7 @@ const App = () =>
         <Route exact path="/login" component={Login} />
         <Route exact path="/companies" component={Companies} />
         <Route exact path="/addcompany" component={AddCompany} />
+        <Route exact path="/displaypdf" component={DisplayPdf} />
         </Jumbotron>
       </Switch>
       </div>
