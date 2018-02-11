@@ -7,7 +7,7 @@ import AddCompany from "./pages/AddCompany";
 
 import DisplayPdf from "./pages/DisplayPdf";
 
-import AddVendors from  "./pages/AddVendors";
+import AddVendor from  "./pages/AddVendor";
 
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
@@ -19,12 +19,12 @@ const App = () =>
     <div>
 
       <Header/>
-       <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3">
+       <div className="container-fluid">
+  <div className="row">
+    <div className="col-md-3">
       <Sidebar/>
       </div>
-          <div class="col-md-6">
+          <div className="col-md-6">
       <Switch>
           <Jumbotron id="main">
         <Route exact path="/" component={Home} />
@@ -34,12 +34,12 @@ const App = () =>
 
         <Route exact path="/displaypdf" component={DisplayPdf} />
 
-        <Route excat path="/addvendors" component={AddVendors}/>
+        <Route excat path="/addvendor" component={AddVendor}/>
 
         </Jumbotron>
       </Switch>
       </div>
-        <div class="col-md-3">
+        <div className="col-md-3">
         </div>
       </div>
       
