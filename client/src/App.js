@@ -7,7 +7,7 @@ import AddCompany from "./pages/AddCompany";
 
 import DisplayPdf from "./pages/DisplayPdf";
 
-import AddVendors from  "./pages/AddVendors";
+import AddVendor from  "./pages/AddVendor";
 
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
@@ -34,7 +34,7 @@ const App = () =>
 
         <Route exact path="/displaypdf" component={DisplayPdf} />
 
-        <Route excat path="/addvendors" component={AddVendors}/>
+        <Route excat path="/addvendor" component={AddVendor}/>
 
         </Jumbotron>
       </Switch>

@@ -17,7 +17,10 @@ module.exports = {
   },
   create: function(req, res) {
     db.Vendor
-      .create(req.body)
+      .create(req.body)     
+      .then(function(dbVendor) { 
+      return db.Company.findOneAndUpdate({}, {$push: {vendors: dbVendor._id}}, {new: true});
+      })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

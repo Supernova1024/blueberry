@@ -13,22 +13,23 @@ import API from "../../utils/API";
 class AddVendor extends Component {
 
 state = {
-	Companies: [],
+	Vendors: [],
 	tin: "",
-	companyName: "",
+	firstName: "",
+	lastName: "",
 	address: "",
 	city: "",
 	state: "",
 	zip: "",
-	contactName: "",
-	contactPhone: "",
-	contactEmail: "",
+	phone: "",
+	email: ""
 };
 
 componentDidMount(){
-	//this.setState
-
+	this.clearForm();
 }
+
+
 
  handleInputChange = event => {
     const { name, value } = event.target;
@@ -38,23 +39,38 @@ componentDidMount(){
   };
 
 
+clearForm = () => {
+	this.setState({
+	Vendors: [],
+	tin: "",
+	firstName: "",
+	lastName: "",
+	address: "",
+	city: "",
+	state: "",
+	zip: "",
+	phone: "",
+	email: ""
+	}) 
+};
+
   handleFormSubmit = event => {
     event.preventDefault();
-    if (event !== 5) {
-      API.saveCompany({
-		    tin: this.state.title,
-			companyName: this.state.companyName,
+    
+      API.saveVendor({
+		    tin: this.state.tin,
+			firstName: this.state.firstName,
+			lastName: this.state.lastName,
 			address: this.state.address,
 			city: this.state.city,
 			state: this.state.state,
 			zip: this.state.zip,
-			contactName: this.state.contactName,
-			contactPhone: this.state.contactPhone,
-			contactEmail: this.state.contactEmail,
+			phone: this.state.phone,
+			email: this.state.email
       })
-        .then(res => this.loadBooks())
+        .then(res => this.clearForm())
         .catch(err => console.log(err));
-    }
+    
   };
 
 
@@ -64,18 +80,24 @@ componentDidMount(){
 
 				<div>
 					<h3  id="add-company-title" className ="text-center"> New Vendor Entry </h3>
-					<form class="form">
+					<form className="form">
 						<Input
 							value={this.state.tin}
        						onChange={this.handleInputChange}
        						name="tin"
-       						placeholder="Tin (required)"
+       						placeholder="EIN or SSN (required)"
 						/>
 						<Input
-							value={this.state.companyName}
+							value={this.state.firstName}
        						onChange={this.handleInputChange}
-       						name="companyName"
-       						placeholder="Company Name (required)"
+       						name="firstName"
+       						placeholder="First Name (required)"
+						/>
+						<Input
+							value={this.state.lastName}
+       						onChange={this.handleInputChange}
+       						name="lastName"
+       						placeholder="Last Name (required)"
 						/>
 						<Input
 							value={this.state.address}
@@ -101,26 +123,25 @@ componentDidMount(){
        						name="zip"
        						placeholder="Zip (required)"
 						/>
+						
 						<Input
-							value={this.state.contactName}
+							value={this.state.phone}
        						onChange={this.handleInputChange}
-       						name="contactName"
-       						placeholder="Contact Name (required)"
-						/>
-						<Input
-							value={this.state.contactPhone}
-       						onChange={this.handleInputChange}
-       						name="contactPhone"
+       						name="phone"
        						placeholder="Phone# (required)"
 						/>
 						<Input
-							value={this.state.contactEmail}
+							value={this.state.email}
        						onChange={this.handleInputChange}
-       						name="contactEmail"
-       						placeholder="Title (required)"
+       						name="email"
+       						placeholder="Email (required)"
 						/>
 						<div className="text-center">
-							<Button> Submit </Button>
+							<Button
+								onClick={this.handleFormSubmit}
+							>
+							 Submit 
+						   </Button>
 						</div>   		
 					</form>
 				

@@ -1,18 +1,23 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const companySchema = new Schema({
+const vendorSchema = new Schema({
   tin: { type: String, required: true },      // tin = taxpayer id # EIN or SS#
-  companyName: { type: String, required: true },
+  firstName: { type: String, required: true },
+  lastName: { type: String, required: true },
   address: { type: String, required: true },
   city: { type: String, required: true },
   state: { type: String, required: true },
   zip: { type: String, required: true },
-  contactName: { type: String, required: true },
-  contactPhone: { type: String, required: true },
-  contactEmail: { type: String, required: true },
+  phone: { type: String, required: true },
+  email: { type: String, required: true },
+  paymentInfo: [{
+  	year: {type: String},
+  	amount: {type: String}
+}]
+
  });
 
-const Company = mongoose.model("Company", bookSchema);
+const Vendor = mongoose.model("Vendor", vendorSchema);
 
-module.exports = Company;
+module.exports = Vendor;
