@@ -26,8 +26,11 @@ loadCompanies = () => {
 	API.getCompanies()
 	.then(res =>
 		this.setState({ companies: res.data})
+
+		
 		)
 	.catch(err => console.log(err));
+	console.log(this.state.companies)
 };
 
 
@@ -71,7 +74,10 @@ loadCompanies = () => {
       				
       			<div id="myButtons">
       				<Button> Edit </Button>
+  				<Link to={"/companies/" + company._id} >
+
       				<Button> Vendors </Button>
+      				</Link>
       			</div>
       			</li>
       			))}
