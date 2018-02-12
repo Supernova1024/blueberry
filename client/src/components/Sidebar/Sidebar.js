@@ -16,8 +16,8 @@ const Sidebar = () => (
         marginTop:-22,
     }}> 
         <SideNav
-            highlightColor='#E91E63'
-            highlightBgColor='#00bcd4'
+            highlightColor='#AEECFB'
+            highlightBgColor='#2686E0'
             defaultSelected='sales'
             onItemSelection={(id, parent) => {
                 console.log('id', id);
