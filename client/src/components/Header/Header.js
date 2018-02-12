@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
-import Logo from "./Blueberrylogo.png"
+import Logo from "./BBlogo.png";
+
 
 const Header = () => (
   <nav className="navbar navbar-default">
