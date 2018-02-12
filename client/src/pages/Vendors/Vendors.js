@@ -15,55 +15,23 @@ class Vendor extends Component {
 
 state = {
   //companyList:["Home Depot", "Target", "Walmart", "Publix", "Amazon", "Wendys"]
-  company: [],
-  vendorIds: [],
-  vendors: [],
-  filterV: []
+  
+ 
+  companyVendors: []
+
 };
 
 componentDidMount(){
   this.loadCompany();
-  this.getVendors();
- 
- 
-
 }
 
 loadCompany = () => {
   API.getCompany(this.props.match.params.id)
-      .then(res => this.setState({vendorIds: res.data.vendors}))
-
-
-       //this.setState({ company: res.data }))
-      //  .then(res => this.setState({ vendors: res.data.vendors})) 
-      .catch(err => console.log(err))
-
-     //console.log(this.state.vendors)
-     
-        
+      .then(res => this.setState({ companyVendors: res.data.vendors.map(vendor => (
+        vendor))})) 
+      .catch(err => console.log(err))      
 };
 
-
-
-getVendors = () => {
- // this.state.vendors.map((vendor, id) => (
-       API.getVendors()
-       .then(res => this.setState({vendors: res.data}))
-       .then(console.log(this.filter))
-       
-
-
-
-          
-
-  //  ))
-};
-
-filterVendors = () => {
-
-   //     console.log(vendorId)
- // })
-}
 
 
   render(){
@@ -78,7 +46,13 @@ filterVendors = () => {
           
               <div className=" jumbotron mytable">
                   <h3>Vendors</h3>
+                    
+                 
+                    
+          
               <table className="table table-striped">
+                 
+                  
             <thead>
           <tr className="myRow">
             <th>
@@ -91,19 +65,23 @@ filterVendors = () => {
           </tr>
         </thead>
         <tbody>
-              {this.state.vendors.map(vendor => (
+            {this.state.companyVendors.map(vendor => (
             <tr className="myRow">
             <td className="td-width">
-                            {vendor.lastName}, {vendor.firstName} 
+              {vendor.lastName}, {vendor.firstName}
             </td>
+                
             <td className="myRowTd">
                 <Input />
         
             </td>
             </tr>
             ))}
+            
               </tbody>
                <button className="btn btn-success vendor-btn"> Preview 1099's </button> 
+               
+               
           </table>
           </div>
 
@@ -111,16 +89,9 @@ filterVendors = () => {
           </Col>
           <Col size="md-3">
 
-           
+        
             </Col>
-             </Row>
-
-            
-            
-
-            
-                
-              
+             </Row>        
              </div>                       
 
       );

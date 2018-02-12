@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+const clear = require("clear");
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,5 +26,6 @@ mongoose.connect(
 
 // Start the API server
 app.listen(PORT, function() {
+	clear();
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });

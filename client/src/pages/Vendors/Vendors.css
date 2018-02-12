@@ -38,7 +38,7 @@ padding: 3px;
 
 .box7 {
 	height: -15px;
-	width: 25px;
+	width: 50px;
 	margin-top: 10px;
 }
 
@@ -46,8 +46,8 @@ padding: 3px;
 
 
 .myRowTd {
-	margin-top: 200px;
-	width: 50px;
+	margin-top: 100px;
+	width: 135px;
 	padding-top: 10px;
 }
 
@@ -55,22 +55,24 @@ padding: 3px;
 	height: 33px;
 }
 
+
+
 .td-width {
-	width:200px;
+	width:150px;
 	text-align: left;
 	padding-top: 10px;
 }
 
 .mytable {
 	background-color: white;
-	width: 95%;
+	width: 100%;
 	
 }
 
 .jumbotron {
 	margin: 0 auto;
 	padding: 0;
-	margin-top: 50px;
+	margin-top: 5px;
 }
 
 .row {
