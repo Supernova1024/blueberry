@@ -1,16 +1,11 @@
 import React from "react";
 import "./Button.css";
 // Destructuring the type, className, children and onClick props, applying them to the button element
-//<<<<<<< Updated upstream
-const Button = ({ type = "primary", className, children }) => (
+
+const Button = ({ type = "primary", className, children, onClick }) => (
   <button id="form-button"
-    
-//=======
-// const Button = ({ type = "primary", className, children, onClick, id }) => (
-//   <button
-//   	id={id}
-//   	onClick={onClick}
-// >>>>>>> Stashed changes
+  	onClick={onClick}
+
     className={["btn", `btn-${type} myBtn`, className].join(" ")}
   >
      {children}
