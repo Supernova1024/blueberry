@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Companies from "./pages/Companies";
+import Vendors from "./pages/Vendors"
 import Login from "./pages/Login";
 import AddCompany from "./pages/AddCompany";
 
@@ -33,7 +34,7 @@ const App = () =>
         <Route exact path="/addcompany" component={AddCompany} />
 
         <Route exact path="/displaypdf" component={DisplayPdf} />
-
+        <Route exact path="/companies/:id" component={Vendors} />
         <Route excat path="/addvendor" component={AddVendor}/>
 
         </Jumbotron>

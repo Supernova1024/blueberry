@@ -22,11 +22,11 @@ export default {
    // Vendor API Calls
    // Get all vendors
   getVendors: function() {
-    return axios.get("/api/vendors");
+    return axios.get("/api/vendors/");
   },
   // Gets the vendor with the given id
   getVendor: function(id) {
-    return axios.get("/api/vendors/" + id);
+    return axios.get("/api/vendors/" + id );
   },
   // Deletes the vendor with the given id
   deleteVendor: function(id) {
