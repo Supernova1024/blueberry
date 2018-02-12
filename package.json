@@ -21,6 +21,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
+    "clear": "^0.0.1",
     "express": "^4.16.2",
     "express-scripts": "^0.0.0",
     "mongoose": "^4.13.10",
