@@ -43,11 +43,34 @@ loadCompanies = () => {
 					</Col>
 					<Col size="md-6">
 						<div style={{ textAlign: 'center' }}>
+							<div className=" jumbotron mytable">
 							<h3>Companies</h3>
-						</div>
-					</Col>
-					<Col size="md-3">
-						<Link to="/AddCompany">
+							<table className="table table-striped">
+							<thead>
+          						<tr className="myRow">
+            					<th>
+              					Name
+           					 	</th>
+           					 	</tr>
+           					 	</thead>
+           					 	<tbody>
+           					 {this.state.companies.map(company => (
+           					<tr className="myRow">
+            				<td className="td-width">
+            					{company.companyName}
+            				</td>
+            				<td className="myRowTd">
+            					<Button> Edit </Button>
+  								<Link to={"/companies/" + company._id}/>
+  							</td>
+  							<td className="myRowTd">
+  								<Button> Vendors </Button>
+      							<Link/>
+      						</td>
+      						</tr>
+      						))}
+           					 </tbody>
+           					 <Link to="/AddCompany">
 						<button 
 				        	a href="/AddCompany"
 				            type="success"
@@ -60,28 +83,15 @@ loadCompanies = () => {
 				            Add Company 
 				         </button>
                           </Link>
+                          </table>
+						</div>
+						</div>
+					</Col>
+					<Col size="md-3">
 
 				   	</Col>
 		         </Row>
-			<ul>
-				{this.state.companies.map(company => (
-      			<li>
-      				
-					<div className="li-text">
-						{company.companyName} 
-					</div>
-      					
-      				
-      			<div id="myButtons">
-      				<Button> Edit </Button>
-  				<Link to={"/companies/" + company._id} >
-
-      				<Button> Vendors </Button>
-      				</Link>
-      			</div>
-      			</li>
-      			))}
-      		</ul>
+			
         		
         		
              </div>     	               	
