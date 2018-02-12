@@ -7,6 +7,7 @@ import AddCompany from "./pages/AddCompany";
 import AddVendors from  "./pages/AddVendors";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
+import Splashpage from "./components/Splashpage";
 
 import Header from "./components/Header";
 import Jumbotron from "./components/Jumbotron";
@@ -25,9 +26,10 @@ const App = () =>
           <Jumbotron id="main">
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/companies" component={Companies} />
-        <Route exact path="/addcompany" component={AddCompany} />
+        <Route exact path="/companies" component={Companies}/>
+        <Route exact path="/addcompany" component={AddCompany}/>
         <Route excat path="/addvendors" component={AddVendors}/>
+        <Route excat path="/SplashPage" component ={Splashpage}/>
         </Jumbotron>
       </Switch>
       </div>
