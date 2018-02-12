@@ -1,9 +1,12 @@
 .navbar-default {
 
-	background-color: #312581;
+
+	background-color: #FFFFFF;
 	text-align: center;
 	width: 100%;
-	font: 'Lucida Sans';
+	text margin-top: 25px;
+	font-family: 'Alegreya';
+
 
 }
 
@@ -11,14 +14,21 @@
 
 float: right;
 margin-top: 15px;
-color: white;
+
+color: #6F6999;
+
 font-size: 32px;
 }
 
 .tag-line {
-	color: white;
+	color: #312581;
+	margin-top: 15px;
+	margin-left: 200px;
+	font-size: 25px;
+	;
 }
 
 img {
 	margin-top: -10px;
+	
 }
