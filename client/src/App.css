@@ -1,5 +1,9 @@
+
+
 .App {
   text-align: center;
+  font-family:'Alegreya';
+
 }
 
 .App-logo {
@@ -50,7 +54,7 @@ button #gear {
 }
 
 .myBtn {
-  background-color: green;
+  background-color:#E5E5E5E5 ;
 }
 
 .title {
