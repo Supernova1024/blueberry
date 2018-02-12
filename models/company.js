@@ -11,6 +11,12 @@ const companySchema = new Schema({
   contactName: { type: String, required: true },
   contactPhone: { type: String, required: true },
   contactEmail: { type: String, required: true },
+  vendors: [
+  	{
+  		type: Schema.Types.ObjectId,
+  		ref: "Vendor"
+  	}
+  ] 
  });
 
 const Company = mongoose.model("Company", companySchema);

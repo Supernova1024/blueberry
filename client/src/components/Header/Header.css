@@ -1,10 +1,12 @@
 .navbar-default {
 
+
 	background-color: #FFFFFF;
 	text-align: center;
 	width: 100%;
 	text margin-top: 25px;
 	font-family: 'Alegreya';
+
 
 }
 
@@ -12,7 +14,9 @@
 
 float: right;
 margin-top: 15px;
+
 color: #6F6999;
+
 font-size: 32px;
 }
 
