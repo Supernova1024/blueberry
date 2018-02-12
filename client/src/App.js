@@ -12,6 +12,7 @@ import AddVendor from  "./pages/AddVendor";
 
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
+import Splashpage from "./components/Splashpage";
 
 import Header from "./components/Header";
 import Jumbotron from "./components/Jumbotron";
@@ -30,12 +31,13 @@ const App = () =>
           <Jumbotron id="main">
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
+        <Route excat path="/SplashPage" component ={Splashpage}/>
         <Route exact path="/companies" component={Companies} />
         <Route exact path="/addcompany" component={AddCompany} />
-
         <Route exact path="/displaypdf" component={DisplayPdf} />
         <Route exact path="/companies/:id" component={Vendors} />
         <Route excat path="/addvendor" component={AddVendor}/>
+
 
         </Jumbotron>
       </Switch>
