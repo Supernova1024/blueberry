@@ -1,13 +1,11 @@
 .navbar-default {
 
-<<<<<<< HEAD
-	background-color: #a396ff;
-=======
-	background-color: #312581;
->>>>>>> a75db4ab864ce6345c5cb33aa8e708259ce6c273
+
+	background-color: #FFFFFF;
 	text-align: center;
 	width: 100%;
-	font-family: 'Halant';
+	text margin-top: 25px;
+	font-family: 'Alegreya';
 
 
 }
@@ -16,14 +14,21 @@
 
 float: right;
 margin-top: 15px;
-color: #524b7f;
+
+color: #6F6999;
+
 font-size: 32px;
 }
 
 .tag-line {
-	color: white;
+	color: #312581;
+	margin-top: 15px;
+	margin-left: 200px;
+	font-size: 25px;
+	;
 }
 
 img {
 	margin-top: -10px;
+	
 }

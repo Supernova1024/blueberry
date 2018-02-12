@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
-import Logo from "./Blueberrylogo.png"
+import Logo from "./BBlogo.png";
+
 
 const Header = () => (
   <nav className="navbar navbar-default">
@@ -12,7 +13,7 @@ const Header = () => (
 
         </a>
         
-        <p className="navbar-text2 navbar-left tag-line" >The antioxidant for your Financial Life</p>
+        <p className="navbar-text2 navbar-left tag-line" >The Antioxidant for your Financial Life</p>
         
           <span className="glyphicon glyphicon-cog " id ="gear" />
         
