@@ -25,6 +25,7 @@
     "express": "^4.16.2",
     "express-scripts": "^0.0.0",
     "mongoose": "^4.13.10",
+    "node-quickbooks": "^2.0.23",
     "path": "^0.12.7",
     "react-pdf": "^2.5.3",
     "react-pdf-js": "^3.0.7",
