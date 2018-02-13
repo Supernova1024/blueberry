@@ -12,7 +12,7 @@
     "back:open": "node server.js",
     "dev:server":"nodemon server.js",
     "dev":"npm-run-all --parallel front:open dev:server",
-    "postinstall": "cd client && yarn && yarn run build"
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "author": "",
   "license": "ISC",
