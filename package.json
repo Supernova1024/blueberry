@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "heroku-postbuild": "npm install && cd client && npm install --only=dev && npm run build",
     "server": "node server.js",
     "client": "node scripts/start-client.js",
     "start": "npm-run-all --parallel front:open back:open",
