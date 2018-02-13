@@ -14,7 +14,7 @@
     "dev":"npm-run-all --parallel front:open dev:server",
     "seed": "node scripts/seedDB.js",
     "installDeps": "yarn && cd client && yarn",
-    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "author": "",
   "license": "ISC",
