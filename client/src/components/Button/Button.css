@@ -2,8 +2,8 @@
 	margin-top: 15px;
 	background-color: #E5E5E5;
 	border: #E5E5E5
-	a.button:hover {
-		background: #E5E5E5;
-	}
+}
 
+.myBtn a.button:hover {
+	background: #E5E5E5;
 }
