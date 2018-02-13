@@ -13,8 +13,8 @@
     "dev:server":"nodemon server.js",
     "dev":"npm-run-all --parallel front:open dev:server",
     "seed": "node scripts/seedDB.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "yarn && cd client && yarn"
+    "installDeps": "yarn && cd client && yarn",
+    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
   },
   "author": "",
   "license": "ISC",
