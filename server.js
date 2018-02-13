@@ -10,7 +10,7 @@ const clear = require("clear");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Serve up static assets
-app.use(express.static(path.resolve(__dirname, "/build")));
+app.use(express.static(path.resolve(__dirname, "/build/client/public")));
 // Add routes, both API and view
 app.use(routes);
 console.log('LOOK __dirname ', __dirname)
