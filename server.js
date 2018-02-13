@@ -10,10 +10,10 @@ const clear = require("clear");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Serve up static assets
-app.use(express.static("client/build"));
+app.use(express.static("build"));
 // Add routes, both API and view
 app.use(routes);
-
+console.log('LOOK __dirname ', __dirname)
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/blueberryDB";
 
@@ -24,6 +24,11 @@ mongoose.connect(MONGODB_URI, {
   useMongoClient: true
 });
 
+
+app.get('*', (req,res) => {
+	const index = path.resolve(__dirname, './build', './client/public/index.html')
+	res.sendFile(index)
+})
 
 // // Set up promises with mongoose
 // mongoose.Promise = global.Promise;
