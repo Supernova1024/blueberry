@@ -8,8 +8,10 @@
     "client": "node scripts/start-client.js",
     "start": "npm-run-all --parallel front:open back:open",
     "build": "node scripts/build.js",
-    "back:open": "yarn run client",
-    "front:open": "nodemon server.js",
+    "front:open": "yarn run client",
+    "back:open": "node server.js",
+    "dev:server":"nodemon server.js",
+    "dev":"npm-run-all --parallel front:open dev:server",
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "installDeps": "yarn && cd client && yarn"
