@@ -1,6 +1,29 @@
 import React, { Component } from "react";
+import QuickBooks from "../../components/QuickBooks";
+import "./Login.css"
 
 
+class Login extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  render(){
+  
+      return (
+        <div>
+         
+          <QuickBooks/>
+      </div>
+  )
+    
+  }
+}
+
+export default Login
+
+
+
+/*
 class Login extends Component{
 
 
@@ -24,3 +47,4 @@ class Login extends Component{
 }
 
 export default Login;
+*/
