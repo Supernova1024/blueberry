@@ -13,7 +13,6 @@
     "dev:server":"nodemon server.js",
     "dev":"npm-run-all --parallel front:open dev:server",
     "seed": "node scripts/seedDB.js",
-    "installDeps": "yarn && cd client && yarn",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "author": "",
