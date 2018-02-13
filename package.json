@@ -6,8 +6,10 @@
   "scripts": {
     "server": "node server.js",
     "client": "node scripts/start-client.js",
-    "start": "concurrently \"nodemon server.js\" \"yarn run client\"",
+    "start": "npm-run-all --parallel front:open back:open",
     "build": "node scripts/build.js",
+    "back:open": "yarn run client",
+    "front:open": "nodemon server.js",
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "installDeps": "yarn && cd client && yarn"
@@ -15,7 +17,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^3.5.0",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "express": "^4.16.2",
     "express-scripts": "^0.0.0",
     "mongoose": "^4.13.10",
+    "npm-run-all": "^4.1.2",
     "path": "^0.12.7",
     "react-pdf": "^2.5.3",
     "react-pdf-js": "^3.0.7",
