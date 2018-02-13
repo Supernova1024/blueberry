@@ -12,6 +12,20 @@ This application allows users to enter company and contractor data manually or c
 We have cut out the clutter of popular cluncky, overpriced softwares and made something simple , sweet easy and as easy to use as making Blueberry... pie!
 
 
+#####Build With 
+
+
+
+
+
+####Contributors 
+Gregory Brown
+Shaheena Qureshi
+Peter Fuller
+Scott Hunter
+
+
+
 
 
 
