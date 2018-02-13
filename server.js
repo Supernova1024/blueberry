@@ -13,16 +13,32 @@ app.use(bodyParser.json());
 app.use(express.static("client/build"));
 // Add routes, both API and view
 app.use(routes);
+console.log('LOOK __dirname ', __dirname)
+// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/blueberryDB";
 
-// Set up promises with mongoose
-mongoose.Promise = global.Promise;
+// Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/blueberryDB",
-  {
-    useMongoClient: true
-  }
-);
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI, {
+  useMongoClient: true
+});
+
+
+app.get('*', (req,res) => {
+	const index = path.resolve(__dirname, './build', '/client/public/index.html')
+	res.sendFile(index)
+})
+
+// // Set up promises with mongoose
+// mongoose.Promise = global.Promise;
+// // Connect to the Mongo DB
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://localhost/blueberryDB",
+//   {
+//     useMongoClient: true
+//   }
+// );
 
 // Start the API server
 app.listen(PORT, function() {
