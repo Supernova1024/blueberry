@@ -1,5 +1,5 @@
 {
-  "name": "blueberry-document-management",
+  "name": "blueberry-app-client",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001/",
@@ -10,7 +10,11 @@
     "react-radio-buttons": "^1.2.1",
     "react-scripts": "1.1.0",
     "react-select-us-states": "^0.1.2",
-    "react-sidenav": "^2.1.2"
+    "react-sidenav": "^2.1.2",
+    "react-pdf": "^2.5.3",
+    "react-pdf-js": "^3.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-select-us-states": "^0.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

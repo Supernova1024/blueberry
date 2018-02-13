@@ -1,5 +1,5 @@
 {
-  "name": "mern",
+  "name": "blueberry-app-server",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,7 +12,6 @@
     "back:open": "node server.js",
     "dev:server":"nodemon server.js",
     "dev":"npm-run-all --parallel front:open dev:server",
-    "seed": "node scripts/seedDB.js",
     "postinstall": "cd client && yarn && yarn run build"
   },
   "author": "",
@@ -29,11 +28,6 @@
     "mongoose": "^4.13.10",
     "npm-run-all": "^4.1.2",
     "path": "^0.12.7",
-    "react-pdf": "^2.5.3",
-    "react-pdf-js": "^3.0.7",
-    "react-radio-buttons": "^1.2.1",
-    "react-router-dom": "^4.2.2",
-    "react-select-us-states": "^0.1.2",
     "router": "^1.3.2"
   }
 }
