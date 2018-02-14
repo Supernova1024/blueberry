@@ -8,7 +8,7 @@ class QBO extends React.Component {
     super(props);
     
     	window.intuit.ipp.anywhere.setup({
-      grantUrl: 'http://localhost:3000/companies',
+      grantUrl: 'https://agile-cove-81436.herokuapp.com/Companies',
       datasources: {
         quickbooks : true,
         payments : true
