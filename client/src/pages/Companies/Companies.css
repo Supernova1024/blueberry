@@ -35,3 +35,25 @@ padding: 3px;
 	display: inline;
 	float: right;
 }
+.jumbotron.mytable {
+	height: auto;
+}
+
+td.td-width{
+	padding-top: 10px;
+}
+
+#name {
+	text-align: left;
+	padding-top: 25px;
+}
+
+.btn-succes {
+	width: 100%;
+	margin-left: 200px;
+
+}
+
+button.my-btn {
+	margin-left: 100px;
+}

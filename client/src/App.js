@@ -13,7 +13,7 @@ import AddVendor from "./pages/AddVendor";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Splashpage from "./components/Splashpage";
-
+import "./App.css"
 import Header from "./components/Header";
 import Jumbotron from "./components/Jumbotron";
 const App = () => (
@@ -27,8 +27,8 @@ const App = () => (
           </div>
           <div className="col-md-6">
             <Switch>
-              <Jumbotron id="main">
-                <Route exact path="/" component={Home} />
+              <Jumbotron className="myjumbotron" id="main">
+                <Route exact path="/" component={Login} />
                 <Route exact path="/login" component={Login} />
                 <Route excat path="/SplashPage" component={Splashpage} />
                 <Route exact path="/companies" component={Companies} />

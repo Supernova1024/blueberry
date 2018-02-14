@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "./C2QB_green_btn_lg_default.png"
 
 
 
@@ -7,7 +8,7 @@ class QBO extends React.Component {
     super(props);
     
     	window.intuit.ipp.anywhere.setup({
-      grantUrl: 'http://localhost:3000/RequestToken',
+      grantUrl: 'http://localhost:3000/companies',
       datasources: {
         quickbooks : true,
         payments : true
@@ -25,7 +26,9 @@ class QBO extends React.Component {
   }
   render(){
       return (
-          <div id="intuButton"></div>
+          <div id="intuButton" className=".jumbotron">
+          <img id="qb-img" src={Image} />
+          </div>
       )
   }
 }

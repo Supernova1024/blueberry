@@ -7,4 +7,10 @@ body {
 
 h3 { 
 
-color: white; }
+color: white; 
+
+}
+
+.myjumbotron#main {
+	height: 650px;
+}
