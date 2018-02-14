@@ -1,6 +1,16 @@
 .footer {
-	margin-bottom: -5px;
-	bottom: 0;
-	color:#312581
-	;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color:#312581;
+}
+.text-center {
+	float: inherit;
+text-align: right;
+padding-bottom: 20px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	padding: 0;
 }
