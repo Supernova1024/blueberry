@@ -79,9 +79,23 @@ loadCompany = () => {
             ))}
             
               </tbody>
+                 <div className="vendor-btn">
                <button className="btn btn-success vendor-btn"> Preview 1099's </button> 
-               
-               
+              <Link className="vendor-btn"
+                            to={
+                              "/companies/" +
+                              this.props.match.params.id +
+                              "/addvendor"
+                            
+                            }
+                          >
+                            <button className="btn btn-success vendor-btn">
+                              
+                              Add Vendor
+
+                            </button>
+                            </Link> 
+               </div>
           </table>
           </div>
 

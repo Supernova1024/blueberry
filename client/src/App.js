@@ -35,7 +35,7 @@ const App = () => (
                 <Route exact path="/addcompany" component={AddCompany} />
                 <Route exact path="/displaypdf" component={DisplayPdf} />
                 <Route exact path="/companies/:id" component={Vendors} />
-                <Route excat path="/addvendor" component={AddVendor} />
+                <Route excat path="/companies/:id/addvendor" component={AddVendor} />
               </Jumbotron>
             </Switch>
           </div>

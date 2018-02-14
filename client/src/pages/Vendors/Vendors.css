@@ -97,3 +97,8 @@ td {
 	padding-top: 25px;
 	font-size: 20px;
 }
+
+.vendor-btn {
+	display: inline;
+	margin-left: 100px;
+}
