@@ -15,7 +15,7 @@ class DisplayPdf extends React.Component {
   render() {
     
     return (
-    	<div className="jumbotron form">
+    	<div className="jumbotron pdfform">
 
    		 	<div className="company-name">
     		 <p> {"The Home Depot"} </p> 
