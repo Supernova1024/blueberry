@@ -1,16 +1,24 @@
 .footer {
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
 	color:#312581;
 }
 .text-center {
 	float: inherit;
 text-align: right;
-padding-bottom: 20px;
+margin-top: -15px;
+
 }
 
 a {
 	color: white;
 	text-decoration: none;
-	padding: 0;
+	
 }
+
+.fa-3x {
+ font-size: 1em;
+ padding: 5px;
+
+  }

@@ -80,7 +80,16 @@ loadCompany = () => {
             
               </tbody>
                  <div className="vendor-btn">
+
+                 <Link 
+                  to={"/displaypdf"}
+                  >
+
                <button className="btn btn-success vendor-btn"> Preview 1099's </button> 
+              
+              </Link>
+
+
               <Link className="vendor-btn"
                             to={
                               "/companies/" +

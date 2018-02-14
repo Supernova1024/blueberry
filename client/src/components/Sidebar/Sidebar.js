@@ -40,14 +40,14 @@ const Sidebar = () => (
                 <NavIcon><SvgIcon size={20} icon={leaf}/></NavIcon>
                 <NavText> Add Company </NavText>
             </Nav>
-            <Nav id='/Vendors' className="appNav">
+            <Nav id='/Orders' className="appNav">
                 <NavIcon><SvgIcon size={20} icon={leaf}/></NavIcon>
-                <NavText> My Vendors </NavText>
+                <NavText> Orders </NavText>
             </Nav>
 
-            <Nav id='/AddVendors' className="appNav">
+            <Nav id='/Reports' className="appNav">
                 <NavIcon><SvgIcon size={20} icon={leaf}/></NavIcon>
-                <NavText> Add Vendors </NavText>
+                <NavText> Reports </NavText>
             </Nav>
         </SideNav>
     </div>
