@@ -1,10 +1,11 @@
 
 #intuButton {
+	
 	width: 40%;
-	height: 200px;
-	margin: 50px auto;
+	margin-left: 25px;
+	margin: 0 auto;
 
-}
+}	
 
 
 
@@ -22,3 +23,15 @@ a {
 	margin-top: 75px;
 	margin-left: 20px;
 }
+
+#qb-img { 
+	margin-top: 25px;
+	margin-left: -45px;
+	height: 50px;
+
+ }
+
+ .jumbotron {
+ 	height: 200px;
+ 	background: white;
+ }

@@ -6,6 +6,7 @@ const Jumbotron = ({ children }) => (
       clear: "both",
       backgroundColor: "#E5E5E5E5",
       fontFamily: "Alegreya"
+
     }}
     className="jumbotron"
     id="main"

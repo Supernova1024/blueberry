@@ -42,8 +42,9 @@ button #gear {
   background-color: #222;
 }
 
-#main {
-  background-color: #4F86F7;
+ #main {
+  background-color:  #4F86F7;
+  height: auto;
 }
  #logo {
   height: 45px;
@@ -69,4 +70,13 @@ h3 {
 
 body {
   min-height: 100%;
+}
+
+.myjumbotron {
+  min-height: auto;
+}
+
+.btn {
+  
+  margin: 0 auto;
 }
