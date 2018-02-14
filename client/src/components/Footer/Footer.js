@@ -25,22 +25,22 @@ function Footer() {
         <div style={phantom}>
           <div style={style}>
             
+            <div class="container">
             Our Company - Help - Privacy
 
 
-            <div class="container">
               <div class="text-center">
                 <a href="https://www.facebook.com/bootsnipp">
-                  <i id="social-fb" class="fa fa-facebook-square fa-3x social" />
+                  <i id="social-fb" class=" social fa fa-facebook-square fa-3x social" />
                 </a>
                 <a href="https://twitter.com/bootsnipp">
-                  <i id="social-tw" class="fa fa-twitter-square fa-3x social" />
+                  <i id="social-tw" class=" social fa fa-twitter-square fa-3x social" />
                 </a>
                 <a href="https://plus.google.com/+Bootsnipp-page">
-                  <i id="social-gp" class="fa fa-google-plus-square fa-3x social" />
+                  <i id="social-gp" class="social fa fa-google-plus-square fa-3x social" />
                 </a>
                 <a href="mailto:#">
-                  <i id="social-em" class="fa fa-envelope-square fa-3x social" />
+                  <i id="social-em" class="social fa fa-envelope-square fa-3x social" />
                 </a>
               </div>
             </div>
