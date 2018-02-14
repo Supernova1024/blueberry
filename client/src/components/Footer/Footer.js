@@ -7,7 +7,6 @@ var style = {
     borderTop: "1px solid #E7E7E7",
     color: "white",
     textAlign: "center",
-    padding: "20px",
     position: "fixed",
     left: "0",
     bottom: "0",
@@ -16,22 +15,38 @@ var style = {
 }
 
 var phantom = {
-  display: 'block',
-  padding: '20px',
+  display: 'inline',
   height: '60px',
   width: '100%',
 }
 
 function Footer() {
-    return (
-        <div>
-            <div style={phantom}>
-                <div style={style}>
-                    Our Company - Help - Privacy 
-                </div>  
+    return <div>
+        <div style={phantom}>
+          <div style={style}>
+            
+            Our Company - Help - Privacy
+
+
+            <div class="container">
+              <div class="text-center">
+                <a href="https://www.facebook.com/bootsnipp">
+                  <i id="social-fb" class="fa fa-facebook-square fa-3x social" />
+                </a>
+                <a href="https://twitter.com/bootsnipp">
+                  <i id="social-tw" class="fa fa-twitter-square fa-3x social" />
+                </a>
+                <a href="https://plus.google.com/+Bootsnipp-page">
+                  <i id="social-gp" class="fa fa-google-plus-square fa-3x social" />
+                </a>
+                <a href="mailto:#">
+                  <i id="social-em" class="fa fa-envelope-square fa-3x social" />
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-    )
+      </div>;
 }
 
 //export default Footer
