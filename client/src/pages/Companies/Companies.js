@@ -38,7 +38,8 @@ class Companies extends Component {
 									<thead>
 										<tr className="myRow">
 											<th>Company Name</th>
-											<th></th>
+											<th>Edit</th>
+											<th> Vendor </th>
 										</tr>
 									</thead>
 									<tbody>
@@ -55,7 +56,7 @@ class Companies extends Component {
 															company._id
 														}
 													>
-													<Button> Edit </Button>
+													<Button className="btn btn-success"> <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> </Button>
 													</Link>
 												</td>
 												<td>
@@ -66,8 +67,9 @@ class Companies extends Component {
 														}
 													>
 														<Button>
+														 <span class="glyphicon glyphicon-list-alt" aria-hidden="true">
+															</span>
 															
-															Vendors
 														</Button>
 													</Link>
 												</td>
